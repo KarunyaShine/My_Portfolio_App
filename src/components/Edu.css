@@ -1,0 +1,19 @@
+.colo{
+  margin: 10px;
+
+}
+.colo:hover{
+    background-color:#b0a9b796; 
+}
+.edu{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+ 
+  
+  background-color: rgb(151, 77, 196);
+}
+.card-body{
+ text-align: center;
+}
