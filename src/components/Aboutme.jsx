@@ -14,15 +14,15 @@ const Aboutme = () => {
      <img src={about_image} alt=''/>
      </div>
      <div className='about-right'>
-      <p>Hello! I’m a passionate front-end developer with a knack for creating visually appealing and user-friendly web applications. 
+      <p className="p-container">Hello! I’m a passionate front-end developer with a knack for creating visually appealing and user-friendly web applications. 
         With knowledge in HTML, CSS, Bootstrap and JavaScript, I specialize in turning complex ideas into 
         seamless digital experiences.
      </p>
-      <p>I thrive on challenges and enjoy collaborating with designers and developers to bring projects to life.
+      <p className="p-container">I thrive on challenges and enjoy collaborating with designers and developers to bring projects to life.
          My goal is to build responsive, accessible, and performant websites that engage users and meet business
           needs.</p>
 
-      <p>In my portfolio, you’ll find a selection of my work, showcasing my skills in React.js. 
+      <p className="p-container">In my portfolio, you’ll find a selection of my work, showcasing my skills in React.js. 
         I believe in continuous learning and regularly explore new technologies to enhance my skill set....</p>
      </div>
     </div>

@@ -13,6 +13,13 @@ function App() {
   return (
     <div className="App">
     <Navbar/>
+    {/* <Home/>
+    <Aboutme/>
+    <Skill/>
+    <Education/>
+    <Experience/>
+    <Testmonial/> */}
+
     <Routes>
     <Route path='*' element={<Home/>}/>
      <Route path='/aboutme' element={<Aboutme/>}/>

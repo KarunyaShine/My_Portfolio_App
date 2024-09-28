@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: row; /* Align boxes in a row */
+    justify-content: space-around; /* Space between boxes */
+    padding: 20px;
+    background-color: rgb(151, 77, 196);
+  }
+  
+  .box {
+    background-color: rgb(255, 255, 255);
+    width: 400px; /* Fixed width */
+    height: 500px; /* Height greater than width */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    border: 2px solid whitesmoke; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+  }
+  
+  .box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Stack boxes vertically on small screens */
+      align-items: center; /* Center boxes */
+    }
+  
+    .box {
+      width: 90%; /* Responsive width on smaller screens */
+      max-width: 300px; /* Max width to prevent excessive stretching */
+    }
+  }
+  

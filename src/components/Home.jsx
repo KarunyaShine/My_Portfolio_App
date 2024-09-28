@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import Profile_img from '../../src/components/proff2.png'
+import Profile_img from '../components/proff2.png'
 import '../components/Home.css'
 
 
