@@ -8,19 +8,24 @@ import Skill from './components/Skill';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Testmonial from './components/Testmonial';
-import { Routes,Route } from 'react-router-dom';
+import { Routes,Route,useLocation  } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 function App() {
-  return (
-    <div className="App">
-    <Navbar/>
-    {/* <Home/>
-    <Aboutme/>
-    <Skill/>
-    <Education/>
-    <Experience/>
-    <Testmonial/> */}
+  const location = useLocation();
+  const [fade, setFade] = useState(false);
 
-    <Routes>
+  useEffect(() => {
+    setFade(true);
+    const timer = setTimeout(() => {
+      setFade(false);
+    }, 500); // Match with the CSS transition duration
+    return () => clearTimeout(timer);
+  }, [location]);
+
+  return (
+    <div className={`App ${fade ? 'fade' : ''}`}>
+          <Navbar />
+    <Routes location={location}>
     <Route path='*' element={<Home/>}/>
      <Route path='/aboutme' element={<Aboutme/>}/>
      <Route path='/education' element={<Education/>}/>
