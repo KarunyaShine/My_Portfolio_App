@@ -1,90 +1,49 @@
-/* .col{
-    position: relative;
-    top: 88px;
-    padding-left: 50px;
-    padding-right: 50px;
-    
-}
 
-
-.info{
-    background-color: rgb(151, 77, 196);
-   
-}
-li{ color: black;}
-li:hover{color:rgb(162, 0, 255);}
-li:hover{ transform: scale(1.2); }
-.sentea{
-    display: inline-block;
-   position: relative;
-   padding-right: 30px;
-   left: -50px;
-   font-size: small;
-   color: azure;
-}
-.senteb{
-    display: inline-block;
-   left: -25px;
-   position: relative;
-   padding-right: 40px;
-   color: azure;
-   font-size: small;
-}
-.sentec{
-    display: inline-block;
-   padding-left: 40px;
-   padding-right: 40px;
-   color: azure;
-   font-size: small;
-}
-.a{
-    padding-bottom: 90px;
-} */
 .skills-container {
-    padding: 20px; /* Padding for the main container */
+    padding: 20px; 
     background-color: rgb(151, 77, 196);
     height: 400px;
   }
   
   .cards-container {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of cards */
-    justify-content: space-around; /* Space cards evenly */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
   }
   
   .card {
-    background-color: #f9f9f9; /* Light background for cards */
-    border: 1px solid #ccc; /* Border for cards */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 30%; /* Width of each card */
-    margin: 10px; /* Margin between cards */
-    padding: 15px; /* Padding inside cards */
-    text-align: center; /* Center text */
-    transition: transform 0.2s; /* Smooth scaling on hover */
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 30%; 
+    margin: 10px; 
+    padding: 15px; 
+    text-align: center; 
+    transition: transform 0.2s; 
     position: relative;
     top: 60px;
   }
   
   .card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05); 
   }
   
   ul {
-    list-style-type: none; /* Remove default list style */
-    padding: 0; /* Remove padding */
-    margin: 10px 0 0; /* Remove margin */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 10px 0 0; 
   }
   
   .card p {
-    margin: 10px 0; /* Margin for spacing between paragraph and list */
-    font-size: 1em; /* Text size for paragraphs */
-    line-height: 1.5; /* Line height for readability */
+    margin: 10px 0; 
+    font-size: 1em;
+    line-height: 1.5; 
   }
   
   @media (max-width: 802px) {
     .card {
-      width: 45%; /* Adjust width for medium screens */
+      width: 45%; 
       display: flex;
       flex-direction: row;
     }
@@ -92,7 +51,7 @@ li:hover{ transform: scale(1.2); }
   
   @media (max-width: 500px) {
     .card {
-      width: 90%; /* Full width for small screens */
+      width: 90%; 
       display: flex;
       flex-direction: row;
     }
